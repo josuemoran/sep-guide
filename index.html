@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>SEP GUIDE</title>
+    <link rel="shortcut icon" href="img/favi.png" />
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+
+
+ 
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!--CSS Style Sheet -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="animate.css" type="text/css">
+
+    <script>
+        $(document).ready(function() {
+            $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function() {
+                    window.location.hash = hash;
+                });
+            });
+            $(window).scroll(function() {
+                $(".slideanim").each(function() {
+                    var pos = $(this).offset().top;
+
+                    var winTop = $(window).scrollTop();
+                    if (pos < winTop + 600) {
+                        $(this).addClass("slide");
+                    }
+                });
+            });
+
+        });
+    </script>
+
+    <script>
+    animateName = "animated tada" ;
+        var animateEnd = "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend";
+
+        $(function() {
+            $("#triferg").hover(function() {
+                
+                $("#triferg").addClass(animateName).one(animateEnd, function() {
+                    $(this).removeClass(animateName);
+                });
+            })
+        });
+    </script>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand pillz " href="#home"> Home</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav pillz">
+                    <li><a href="#ovr">Overview</a></li>
+                    <li><a href="#cur">Curriculum</a></li>
+                    <li><a href="#tips">Tips</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <div class="full-w full-h" id="home">
+        <div class="text-center headd">
+            <img id="triferg" src="img/sep.png">
+        </div>
+    </div>
+
+    <div class="col-md-12">
+
+        <div class="col-md-12">
+            <h1 id="ovr">Overview</h1>
+            <div class="container">
+                <div class="jumbotron">
+                    <h2>SEP is a great program that opens a lot of opportunities in software engineering. Throughout their 4 years in the SEP program, students will learn many fundementals in software and coding.They will also learn the importance of planning, teamwork, and
+            independent learning.</h2>
+                </div>
+
+            </div>
+            <h1 id="cur">Curriculum</h1>
+            <div class="panel-group col-md-12" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          9th Grade
+        </a>
+      </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            <div class="col-md-6">
+                                <ul>
+                                    <li>Scratch- A simple block programming platform to understand coding fundamentals without written code</li>
+                                    <li>Robotics- Using Lego Mindstorm robots to manipulate objects in the real world using sensors and block based code</li>
+                                    <li>Python- The studnet's first interaction with simple written code which teaches them the importance of syntax</li>
+                                </ul>
+                            </div>
+                            <div id="9grCar" class="col-md-6">
+                                <div id="carousel9" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carousel9" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carousel9" data-slide-to="1"></li>
+                                        <li data-target="#carousel9" data-slide-to="2"></li>
+                                    </ol>
+
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="item active">
+                                            <img src="img/9gr1.png" alt="scratch" class="carPic">
+                                            <div class="carousel-caption">
+                                                Scratch
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <img src="img/9gr2.JPG" alt="robots" class="carPic">
+                                            <div class="carousel-caption">
+                                                Robotics
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <img src="img/9gr3.gif" alt="python" class="carPic">
+                                            <div class="carousel-caption">
+                                                Python
+                                            </div>
+                                        </div>
+                                        ...
+                                    </div>
+
+                                    <!-- Controls -->
+                                    <a class="left carousel-control" href="#carousel9" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#carousel9" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          10th Grade
+        </a>
+      </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+
+                            <div class="col-md-6">
+                                <ul>
+                                    <li>Processing- Using code to create paintings and games on a digital canvas</li>
+                                    <li>Electronics- Learning how circuits function and using code along side a Makey-Makey</li>
+                                    <li>Data- Using spreadsheets and other programs to understand organizing big data and its importance</li>
+                                </ul>
+                            </div>
+                            <div id="10grCar" class="col-md-6">
+                                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                    </ol>
+
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="item active">
+                                            <img src="img/10gr1.JPG" alt="scratch" class="carPic">
+                                            <div class="carousel-caption">
+                                                Scratch
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <img src="img/10gr2.JPG" alt="robots" class="carPic">
+                                            <div class="carousel-caption">
+                                                Robotics
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <img src="img/10gr3.png" alt="python" class="carPic">
+                                            <div class="carousel-caption">
+                                                Python
+                                            </div>
+                                        </div>
+                                        ...
+                                    </div>
+
+                                    <!-- Controls -->
+                                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          11th Grade
+        </a>
+      </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+
+                            <div class="col-md-6">
+                                <ul>
+                                    <li>Github- Understanding how to use Github and its importance in the professional workplace</li>
+                                    <li>HTML- Learning how to create content on a webpage</li>
+                                    <li>CSS+Bootstrap- Styling a webpages content and making it responsive with Bootstrap</li>
+                                    <li>JS+jQuery- Teaching students how to make their websites interactive</li>
+                                </ul>
+                            </div>
+                            <div id="11grCar" class="col-md-6">
+                                <div id="carousel11" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carousel11" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carousel11" data-slide-to="1"></li>
+
+                                    </ol>
+
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="item active">
+                                            <img src="img/11gr1.png" alt="scratch" class="carPic">
+                                            <div class="carousel-caption">
+                                                Github
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <img src="img/11gr2.png" alt="robots" class="carPic">
+                                            <div class="carousel-caption">
+                                                HTML/CSS/Bootstrap/JS+JQuery
+                                            </div>
+                                        </div>
+
+                                        ...
+                                    </div>
+
+                                    <!-- Controls -->
+                                    <a class="left carousel-control" href="#carousel11" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#carousel11" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFour">
+                        <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          12th Grade
+        </a>
+      </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                        <div class="panel-body">
+
+                            <ul>
+                                <li>COMING SOON- SEP 12's curriculm is still being created. Once that information is avaiable, updates will be made to display the up to date curriculm</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--TIPS-->
+    <div class="col-md-12">
+        <div class="col-md-12">
+            <h1 id="tips">Tips</h1>
+            <h2>To being a better student </h2>
+            <div class="text-center" id="landing">
+                <div class="col-sm-6 do">
+                    <h1>Do's</h1>
+                    <h2>Show up on time and ready to code</h2>
+                    <br>
+                    <h2>Have things ready to turn in</h2>
+                    <br>
+                    <h2>Focus on the Syntax you're writing</h2>
+                    <br>
+                    <h2>Activley participate and ask questions</h2>
+                    <br>
+                    <h2>Pay attention in class</h2>
+
+
+                </div>
+                <div class="col-sm-6 dont">
+                    <h1>Don'ts</h1>
+                    <h2>BE LATE TO 1ST PERIOD!</h2>
+                    <footer>Latness can account to detention</footer>
+                    <h2>Hand in things late</h2>
+                    <footer>That means half credit</footer>
+                    <h2>Be a distraction</h2>
+                    <br>
+                    <h2>Talk when the teacher is talking</h2>
+                    <br>
+                    <h2>Be Kevin and Josue</h2>
+                </div>
+            </div>
+        </div>
+        <h2>And make sure to have fun while coding, because you're allowed to be creative and build anything you want as long as you finish all the requirments!
+        </h2>
+        <br>
+        <h2>
+        "Done is better than perfect"
+        </h2>
+        <footer>-Mr Mueller</footer>
+    </div>
+
+
+
+</body>
+
+</html>
+<!--http://myfonts.us/td-zDQ8Ij-->
+<!--http://www.typography.com/fonts/font_styles.php?productLineID=100013-->
+<!--http://www.myfonts.com/fonts/adobe/helvetica-neue/cond-heavy-obl/-->
+<!--http://new.myfonts.com/fonts/urw/nicolas-cochin/t-regular/-->
+<!--http://www.dafont.com/excelerate.font?text=DHL-->
+
+<!--IDEA-->
+<!--CLICK ON A  FACE, AND IT RAINNSSSSSSS-->

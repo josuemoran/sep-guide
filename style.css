@@ -1,0 +1,142 @@
+body {
+ background-color: #CEE4F3;
+
+  cursor: url("m.png"), auto;
+ }
+
+.jumbotron {
+ padding-top: 30px;
+ padding-bottom: 30px;
+ margin-bottom: 30px;
+ color: inherit;
+ background-color: #CEE4F3;
+}
+ @font-face {
+  font-family: Palace;
+  src: url('fonts/Palace.otf');
+ }
+ .carPic {
+  max-height: 400px;
+  margin: auto;
+ }
+ .carousel-caption {
+  color: black;
+ }
+ #9grCar {
+  display: none;
+  visibility: hidden;
+ }
+ h1,
+ h2 {
+  font-family: Palace, sans-serif;
+ }
+ html,
+ body {
+  height: 100%;
+ }
+ .full-w {
+  width: 100%;
+ }
+ .full-h {
+  height: 100%;
+ }
+ .headd {
+  margin-top: 5%;
+ }
+ footer {
+  font-size: 30px;
+ }
+ .full-w {
+  width: 100%;
+ }
+ .full-h {
+  height: 100%;
+ }
+ .transparentH {
+  background: rgba(0, 0, 0, .3);
+ }
+ #home {
+  background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(255, 255, 255, 0.3)), url("img/class.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: table;
+ }
+ .vert-center {
+  display: table-cell;
+  vertical-align: middle;
+ }
+ .section {
+  padding: 70px;
+ }
+ .pillz {
+  font-size: 200%;
+ }
+ .navbar-default .navbar-brand,
+ .navbar-default .navbar-nav>li>a {
+  color: #;
+ }
+ .navbar-default .navbar-brand:focus,
+ .navbar-default .navbar-brand:hover,
+ .navbar-default .nav>li>a:focus,
+ .navbar-default .nav>li>a:hover {
+  color: #;
+ }
+ /**/
+ /**/
+ @media screen and (min-width: 0px) {
+  li {
+   font-size: 14px;
+  }
+  h1 {
+   font-size: 30px;
+  }
+ }
+ @media screen and (min-width: 768px) {
+  li {
+   font-size: 18px;
+  }
+  h1 {
+   font-size: 50px;
+  }
+ }
+ @media screen and (min-width: 992px) {
+  li {
+   font-size: 22px;
+  }
+  h1 {
+   font-size: 60px;
+  }
+ }
+ @media screen and (min-width: 1200px) {
+  li {
+   font-size: 28px;
+  }
+  h1 {
+   font-size: 80px;
+  }
+ }
+ /*ul {*/
+ /* font-size: 32px;*/
+ /*}*/
+ /*h2 {*/
+ /* font-size: 40px;*/
+ /*}*/
+ /*h3 {*/
+ /* font-size: 35px;*/
+ /*}*/
+ /*a:link,*/
+ /*a:visited {*/
+ /* color: #E04C32;*/
+ /* background-color: transparent;*/
+ /* text-decoration: none*/
+ /*}*/
+ /*a:hover {*/
+ /* color: pink;*/
+ /* background-color: transparent;*/
+ /* text-decoration: underline*/
+ /*}*/
+ /*a:active {*/
+ /* color: yellow;*/
+ /* background-color: transparent;*/
+ /* text-decoration: underline*/
+ /*}*/
